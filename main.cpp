@@ -2,10 +2,6 @@
 #include "Vector2D.h"
 
 #include <iostream>
-#include <string>
-#include <SDL.h>
-#include <memory>
-
 
 int main(int argc, char* args[])
 {
@@ -26,10 +22,5 @@ int main(int argc, char* args[])
 		std::cout << "Game failed to initialize.";
 	}
 
-
-	//std::cout << "\n\nEnd\n";
-	char c;
-	std::cin >> c;
 	return 0;
 }
-
