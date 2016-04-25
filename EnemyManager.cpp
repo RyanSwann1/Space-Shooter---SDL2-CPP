@@ -45,11 +45,7 @@ void EnemyManager::update()
 	spawnEnemy();
 	if (m_spawn)
 	{
-		/*
-		afronym: whaterver comes after 'new'
-		afronym: you get a pointer to it
-		afronym: so new Enemy() -> Enemyj*
-		*/
+
 		m_enemies.push_back(std::unique_ptr<SDLGameObject>(new Enemy(Game::instance()->getRandomNumb(0, Game::instance()->getPlayingFieldWidth()))));
 		m_spawn = false;
 	}
